@@ -1,0 +1,428 @@
+.bg_order{
+    background-color: #1c1c1c;
+    height: auto;
+}
+
+h1{
+    font: 45px RainTungsten-Medium, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form-order-row{
+    margin: 15px 29% 5px 29%;
+}
+
+.sucsess_row{
+    background-color: #fff;
+}
+
+.form-order{
+    background-color: #b57330;
+    text-align: center;
+}
+
+.errorMessage{
+    color: #901d00;
+    margin: 5px 5% 1% 5%;
+    text-align: left;
+}
+
+.nav--order-wrap{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.step1{
+    width: 40px;
+    height: 40px;
+    background-color: #925b1f;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.step1 p, .step2 p, .step3 p{
+    margin-top: 5px;
+    font: 22px roboto, sans-serif;
+}
+
+.step1 p{
+    color: #fff;
+}
+
+.step2 p{
+    color: #b57330;
+}
+
+.step3 p{
+    color: #fff;
+}
+
+.arrow_right{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.arrow_right img{
+    margin-top: 10px;
+}
+
+.step2{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.step3{
+    width: 40px;
+    height: 40px;
+    background-color: #925b1f;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+label{
+    color:#cccccc;
+    display: block;
+    text-align: left;
+    margin: 40px 0 15px 5%;
+}
+
+select, input{
+    width: 90%;
+    height: 31px;
+    font: 16px roboto, sans-serif;
+    color: #000;  
+}
+
+.quest_id{
+    box-shadow: inset 0 -3px 15px #ccc;
+    -webkit-box-shadow: inset 0 -3px 15px #ccc;
+    -moz-box-shadow: inset 0 -3px 15px #ccc;
+}
+
+.buttons{
+    padding: 40px 0 40px 0;
+}
+
+input.submit_button{
+    width: 60%;
+    height: 60px;
+    background-color: #925b1f;
+    border: 0;
+    font: 20px roboto, sans-serif;
+    color: #fff;     
+}
+
+input.submit_button:hover{
+    background-color: #704618;
+    transition: 0.3s;
+}
+
+#datetimepicker1{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.datetimepicker{
+    box-shadow: inset 0 -3px 15px #ccc;
+    -webkit-box-shadow: inset 0 -3px 15px #ccc;
+    -moz-box-shadow: inset 0 -3px 15px #ccc;
+    border-radius: 0;
+    font: 16px roboto, sans-serif;
+    color: #000;  
+}
+.input-group-addon{
+    border-radius: 0;
+}
+
+input.radio_my{
+    width: 5%;
+    height: 10px;
+}
+
+.form_step2{
+    text-align: left;
+}
+
+.label_step2{
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    text-indent: -15px;
+    cursor: pointer;
+    color: #efefef;
+}
+
+div.radio_div{
+     height: 23px;
+     font: 14px roboto, sans-serif;
+     background-color: #ae6e2e;
+     width: 95%;
+     margin: 10px auto 0 auto;     
+}
+
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.radio_my {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 10px;
+  height: 10px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+.radio_my + label {
+  cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+.radio_my:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio_my:not(checked) + label {
+  position: relative; /* будем позиционировать псевдочекбокс относительно label */
+  padding: 0 0 0 40px; /* оставляем слева от label место под псевдочекбокс */
+}
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.radio_my:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 25px;
+  height: 13px;
+  border-radius: 13px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+.radio_my:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  transition: all .1s; /* анимация, чтобы чекбокс переключался плавно */
+}
+/* Меняем фон чекбокса, когда он включен. */
+.radio_my:checked + label:before {
+  background: #9FD468;
+}
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.radio_my:checked + label:after {
+  left: 12px;
+}
+
+.name_tel{
+    text-align: center;
+}
+
+.name_tel_input{
+    box-shadow: inset 0 -3px 15px #ccc;
+    -webkit-box-shadow: inset 0 -3px 15px #ccc;
+    -moz-box-shadow: inset 0 -3px 15px #ccc;
+    border: 0;
+    padding-left: 2%;
+}
+
+.ccapcha{
+    text-align: center;
+}
+
+.capcha_input{
+    width: 62%;
+    margin: 10px 0 0 2%;
+    padding-left: 2%;
+    box-shadow: inset 0 -3px 15px #ccc;
+    -webkit-box-shadow: inset 0 -3px 15px #ccc;
+    -moz-box-shadow: inset 0 -3px 15px #ccc;
+    border: 0;
+}
+
+.capcha_wrap{
+    margin: 0 5%;
+}
+
+.refresh_capcha{
+    font: 10px roboto, sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    display: block;
+    float: left;
+    padding-left: 2%;
+}
+
+.refresh_capcha:hover{
+    font: 10px roboto, sans-serif;
+    color: #fff;
+}
+
+.image_capcha{
+    float: left;
+    width: 36%;
+    height: 55px;
+}
+
+.label_time{
+    margin: 40px 0 15px 3%;
+}
+
+.button_input{
+    text-align: center;
+    margin: 8%;
+}
+
+.arrow3_present{
+    width: 210px;
+}
+
+#inp_name{
+    margin-top: 40px;
+}
+
+#inp_tel{
+    margin: 40px 0 0 0;
+}
+
+.submit_button3{
+    margin: 40px 0 40px 0;
+}
+
+.errorSummary{
+    padding-top: 20px;
+    color: #901d00;
+}
+
+.error_wrap{
+    text-align: left;
+    margin: 0 5% 0 5%;
+}
+
+div.error_wrap2{
+    text-align: left;
+}
+
+
+.name_tel_input2{
+    margin-bottom: 0;
+}
+
+.name_tel_input3{
+    margin-top: 3%;
+}
+
+h1.success_h1{
+    color: #000;
+    margin-top: 10%;
+}
+
+.img_phone{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+p.success_p{
+    font: 18px roboto, sans-serif;
+    width: 40%;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.div_link_success{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 992px){
+    .form-order-row{
+    margin: 15px 20% 5px 20%;
+}
+    div.radio_div{
+        width: 100%;
+            
+    }
+    
+    input.submit_button{
+    font: 16px roboto, sans-serif;  
+}
+}
+
+@media screen and (max-width: 768px){
+    .form-order-row{
+     margin: 15px 15% 5px 15%;
+}
+    div.radio_div{
+        width: 100%;
+    }
+    
+    input.submit_button{
+    font: 14px roboto, sans-serif;  
+    }
+    
+    h1.success_h1{
+        font-size: 35px;
+    }
+    
+    .arrow_img_success{
+        width: 190px;
+    }
+
+        
+}
+
+@media screen and (max-width: 568px){
+    .form-order-row{
+    margin: 15px 2% 5px 2%;
+    }
+    
+    div.radio_div{
+        width: 100%;        
+        font: 12px roboto, sans-serif;
+    }
+    
+    input.submit_button{
+    font: 12px roboto, sans-serif;  
+}
+
+}
+
+@media screen and (max-width: 380px){
+    .form-order-row{
+    margin: 15px 0 5px 0;
+    }
+    
+    div.radio_div{
+        font: 10px roboto, sans-serif;
+        padding-top: 2px; 
+        width: 100%;       
+    }
+    
+    input.submit_button{
+    font: 10px roboto, sans-serif;  
+    }
+    
+    
+    .bot {
+        height: 100px;
+    }
+}
